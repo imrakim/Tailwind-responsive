@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./assets.css" />
+  </head>
+  <body>
+    <!-- Head section  -->
+    <header class="bg-gray-800 text-white assets">
+        <nav class="flex justify-between items-center container mx-auto py-4 px-4">
+          <div>
+            <a href="#" class="text-lg font-bold">Rakim</a>
+          </div>
+          <div class="hidden md:flex space-x-4" id="menu">
+            <a href="#" class="hover:text-gray-300">Home</a>
+            <a href="#" class="hover:text-gray-300">About</a>
+            <a href="#" class="hover:text-gray-300">Service</a>
+            <a href="#" class="hover:text-gray-300">Contact</a>
+          </div>
+          <div class="md:hidden">
+            <button id="menu-button" class="text-2xl focus:outline-none">♨</button>
+          </div>
+        </nav>
+        <div class="md:hidden" id="mobile-menu">
+          <a href="#" class="block py-2 px-4 hover:bg-gray-700">Home</a>
+          <a href="#" class="block py-2 px-4 hover:bg-gray-700">About</a>
+          <a href="#" class="block py-2 px-4 hover:bg-gray-700">Service</a>
+          <a href="#" class="block py-2 px-4 hover:bg-gray-700">Contact</a>
+        </div>
+      </header>
+      
+      <script>
+        const menuButton = document.getElementById("menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+      
+        menuButton.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      </script>
+      
+  </body>
+</html>
